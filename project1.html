@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Project - Portfolio Web </title>
+    <link rel="stylesheet" href="/Styles/style.css">
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <div class="nav-left">
+          <ul>
+            <li><button class="offScreenButton" onclick="document.location='index.html'"> Home </button></li>
+            <li>
+              <div class="dropdown">
+                <button class="dropbtn" class="offScreenButton" onclick="document.location='aboutMe.html'"> About Me </button>
+                <div class="dropdown-content">  
+                  <hr><a href="aboutMe.html#skill"> Skills </a><hr>
+                  <a href="aboutMe.html#pastExperiences"> Past Experiences</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="dropdown">
+                <button class="onScreenButton" class="dropbtn" onclick="document.location='projects.html'"> Projects </button>
+                <div class="dropdown-content"> 
+                  <hr><a href="project1.html"> Portfolio Web </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <ul>
+            <li><button class="offScreenButton" onclick="document.location='contact.html'"> Contact </button></li>
+            <li><a href="https://www.linkedin.com/in/adam-ruest-3b2a4b236/"><img src="/Images/linkedin-6-32.png"/></a></li>
+            <li><a href="https://www.facebook.com/adam.ruest.3"><img src="/Images/facebook-6-32.png"/></a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+      
+  </body>
+</html>
