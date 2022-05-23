@@ -137,6 +137,10 @@ nav ul {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+.dropdown-content:hover .dropdown-content {
+    display: block;
+}
   
 .dropdown:hover .dropbtn {
     background-color: var(--main-color);
@@ -181,6 +185,7 @@ main {
     height: 500px;
     margin-top: 10em;
     margin-left: 20em;
+    z-index: -1;
 }
 
 .aboutme {
@@ -235,6 +240,11 @@ main {
 .aboutme .col-right p {
     width: 30em;
     margin-right: 10em;
+}
+
+.aboutme .skill ul {
+    font-size: 24px;
+    list-style-type: none;
 }
 
 .aboutme .pastExperiences div {
