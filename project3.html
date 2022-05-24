@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Project - Portfolio Web </title>
+    <link rel="stylesheet" href="/styles/style.css">
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <div class="nav-left">
+          <ul>
+            <li><button class="offScreenButton" onclick="document.location='index.html'"> Home </button></li>
+            <li>
+              <div class="dropdown">
+                <button class="dropbtn" class="offScreenButton" onclick="document.location='aboutMe.html'"> About Me </button>
+                <div class="dropdown-content">  
+                  <hr><a href="aboutMe.html#skill"> Skills </a><hr>
+                  <a href="aboutMe.html#pastExperiences"> Past Experiences</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="dropdown">
+                <button class="onScreenButton" class="dropbtn" onclick="document.location='projects.html'"> Projects </button>
+                <div class="dropdown-content"> 
+                  <hr><a href="project1.html"> Web Portfolio </a>
+                  <hr><a href="project2.html"> Bank Account System </a>
+                  <hr><a href="project3.html"> Memory Game </a>
+                  <hr><a href="project4.html"> Password Generator </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <ul>
+            <li><button class="offScreenButton" onclick="document.location='contact.html'"> Contact </button></li>
+            <li><a href="https://www.linkedin.com/in/adam-ruest-3b2a4b236/"><img src="/images/linkedin-6-32.png"/></a></li>
+            <li><a href="https://www.facebook.com/adam.ruest.3"><img src="/images/facebook-6-32.png"/></a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="project_page">
+        <h1> Memory Game </h1>
+        <div class="first-content">
+          <div class="col-left">
+            <p> This project was done a a mid-term project for my C++ class back in Februaury of 2022. The goal was to make a small mini-game that would consist of showing up a sequence of numbers for a delimited amount of time. The user would then hae to re-write the sequence perfectlty otherwise he'll lose a life. The user had 3 life before losing and then he'd get a new sequence for hime to try to remeber. The users were kept in a text file, so soemone could long on their account and resart where they left off last time, their level determining the amount of number the sequence would have. Doing this project was the first time I did a big project in C++ and was the first time one of my project used a lot of library, 11 to be exact and most of them where not even for logic, just formatting and making the thing look good.</p>
+          </div>
+          <div class="col-right">
+            <img src="/images/project_memory.png">
+          </div>
+        </div><hr>
+        <div class="second-content">
+          <p> This project led me to learn how to use the windows command prompt at first to execute a project outside of Visual Studio. This being something I never did before, I had to learn how to do it, but... well... the Internet is a thing. This project was also the first time I worked with header files, these being very useful in C++ command prompt programming, allowing you to import functions made by other peoples and not being confinned to the boudaries of the basic libraries like "iostream" or "string". The C++ community is a very large one, and if you need to do somethign that you don't know how to do, you can probably find a header file somewhere on the internet that could help you. This feature is overall very useful for any programmer.</p>
+          <p> In terms of problem I encountered along the way, I did not face any except for one. One of the required things we had to do was to add sound to the game, indicating if the player won or lost. We were supposed to do it with the "Windows.h" library with the "beep" command. This was quite easy to figure out, but I wanted to play some custom sound effects like a ding from an MP4 file. That was the though part, I spent close to 3 days trying to figure out how to do it, before finally finding out that you needed to import the needed library in the project setting themself. This was somthing i never encountered befor and was quite relieved when I got it working. From there on out, it was smooth sailing until the end.</p>
+        </div>
+        <project-nav>
+          <button class="backward" onclick="document.location='projects.html'"> &lt; Go back to projects </button>
+          <button class="github" onclick="window.location.href='https://github.com/AdamRuest/memory_game'"> To Github Source Code &gt; </button>
+        </project-nav>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Project - Portfolio Web </title>
+    <link rel="stylesheet" href="/styles/style.css">
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <div class="nav-left">
+          <ul>
+            <li><button class="offScreenButton" onclick="document.location='index.html'"> Home </button></li>
+            <li>
+              <div class="dropdown">
+                <button class="dropbtn" class="offScreenButton" onclick="document.location='aboutMe.html'"> About Me </button>
+                <div class="dropdown-content">  
+                  <hr><a href="aboutMe.html#skill"> Skills </a><hr>
+                  <a href="aboutMe.html#pastExperiences"> Past Experiences</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="dropdown">
+                <button class="onScreenButton" class="dropbtn" onclick="document.location='projects.html'"> Projects </button>
+                <div class="dropdown-content"> 
+                  <hr><a href="project1.html"> Web Portfolio </a>
+                  <hr><a href="project2.html"> Bank Account System </a>
+                  <hr><a href="project3.html"> Memory Game </a>
+                  <hr><a href="project4.html"> Password Generator </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <ul>
+            <li><button class="offScreenButton" onclick="document.location='contact.html'"> Contact </button></li>
+            <li><a href="https://www.linkedin.com/in/adam-ruest-3b2a4b236/"><img src="/images/linkedin-6-32.png"/></a></li>
+            <li><a href="https://www.facebook.com/adam.ruest.3"><img src="/images/facebook-6-32.png"/></a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="project_page">
+        <h1> Bank Account System </h1>
+        <div class="first-content">
+          <div class="col-left">
+            <p> This project first began around the middle of April. It was, at the beginning, for one of my class, but I was so interested in the project that I went above and beyond and implemented things that weren't asked in the first place. This project help me understand the final few things I didn't understand completly at first. Now that I've done this project, I'm feeling a lot more confient with C++ and can confidently say that I would accept any challenge that comes my way. This project also allowed me to work differently than normal, having to use a header file programmed by someone else, which gave me experience in an industry setting which I think is something really important to have experience in before getting a job in the domain.</p>
+          </div>
+          <div class="col-right">
+            <img src="/images/project_bank.png">
+          </div>
+        </div><hr>
+        <div class="second-content">
+          <p> Like I stated above, this project forced me to work in way I had never experienced before, it made me work with file I didn't develop myself which was something difficult to adapt to. Although it was quite difficult to work with, I managed to handle it and learned from this experience by getting some professional work experience. This project also allowed me to perfect my C++ skills and I went above and beyond by implementing some things that weren't asked for like a menu to decide how many transactions you would want the program to output or also by resting the screen at every oprations while keeping a header.</p>
+          <p> Except for the slight issues I had trying to make the other person's work work with my code, I didn't have much issues while deelopping this project, I knew almost all of the things that were required to accomplish this task and the things I didn't know how to do, I simply learned them and now, I will certainly know them for the rest of my programming career. Like my other projects, the uploading to Github part was not an issue I knocked that task off the list of things to do fairly quickly.</p>
+        </div>
+        <project-nav>
+          <button class="backward" onclick="document.location='projects.html'"> &lt; Go back to projects </button>
+          <button class="github" onclick="window.location.href='https://github.com/AdamRuest/bank_account_managment'"> To Github Source Code &gt; </button>
+        </project-nav>
+    </main>
+  </body>
+</html>

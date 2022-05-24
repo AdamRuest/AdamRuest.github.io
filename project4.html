@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Project - Portfolio Web </title>
+    <link rel="stylesheet" href="/styles/style.css">
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <div class="nav-left">
+          <ul>
+            <li><button class="offScreenButton" onclick="document.location='index.html'"> Home </button></li>
+            <li>
+              <div class="dropdown">
+                <button class="dropbtn" class="offScreenButton" onclick="document.location='aboutMe.html'"> About Me </button>
+                <div class="dropdown-content">  
+                  <hr><a href="aboutMe.html#skill"> Skills </a><hr>
+                  <a href="aboutMe.html#pastExperiences"> Past Experiences</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="dropdown">
+                <button class="onScreenButton" class="dropbtn" onclick="document.location='projects.html'"> Projects </button>
+                <div class="dropdown-content"> 
+                  <hr><a href="project1.html"> Web Portfolio </a>
+                  <hr><a href="project2.html"> Bank Account System </a>
+                  <hr><a href="project3.html"> Memory Game </a>
+                  <hr><a href="project4.html"> Password Generator </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <ul>
+            <li><button class="offScreenButton" onclick="document.location='contact.html'"> Contact </button></li>
+            <li><a href="https://www.linkedin.com/in/adam-ruest-3b2a4b236/"><img src="/images/linkedin-6-32.png"/></a></li>
+            <li><a href="https://www.facebook.com/adam.ruest.3"><img src="/images/facebook-6-32.png"/></a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="project_page">
+        <h1> Password Generator </h1>
+        <div class="first-content">
+          <div class="col-left">
+            <p> This project was done as an end of term project in my first programmation class. The goal was to be able to ask the user their first and last name and, from that, depending on if the initials are vowels or consonant. The project was done in TypeScript, and since it was the first class, we couldn't use "switch" statement so we had to have a bunch of "if" statement in order to know the layout of the generated password. Speaking of which, the layout looked like this: vowel, consonant, vowel, consonant, number from 1 to 99. The vowel and consonant were determined by the initals of the user, the first letter of each name filling up the first instant of that type of letter. The rest that weren't filled up were randomly generated.</p>
+          </div>
+          <div class="col-right">
+            <img src="/images/project_password.png">
+          </div>
+        </div><hr>
+        <div class="second-content">
+          <p> This project, being the last project we did in TypeScript, didn't teach me anything in the language. Although we had never worked with the ASCII character table before, we didn't have to do the convertion ourself, since our teacher provided us wiht a function doing just that. Although the project in itself didn't teach me anything, the situation did. I was on a real time crunch to finish this project since i only had 3 days to do it. This as taught me that when i need to finish a project on a date, I can't afford to slackoff and need to work hard to finish it in time.</p>
+          <p> Like i mentionned above, the only thing that I didn't know how to do was the ASCII table random letter generator, but, fortunatly, our teacher was kind enough to provide us with the solution to that problem. Even if he gave us the solution, I wanted to understand how it worked, but couldn't at the time. Now that i did the C++ class thopugh, i can pretty easily understand this function and realise that i should have been able to understand it at the time, only thing was that i didn't do any research on the ASCII table chart since i didn't know how it was called. Other than that, the project was smooth sailing and was wuite easy to complete. 
+          </p>
+        </div>
+        <project-nav>
+          <button class="backward" onclick="document.location='projects.html'"> &lt; Go back to projects </button>
+          <button class="github" onclick="window.location.href='https://github.com/AdamRuest/password_generator'"> To Github Source Code &gt; </button>
+        </project-nav>
+    </main>
+  </body>
+</html>
