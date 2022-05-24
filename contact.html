@@ -26,7 +26,10 @@
               <div class="dropdown">
                 <button class="dropbtn" class="offScreenButton" onclick="document.location='projects.html'"> Projects </button>
                 <div class="dropdown-content"> 
-                  <hr><a href="project1.html"> Portfolio Web </a>
+                  <hr><a href="project1.html"> Web Portfolio </a>
+                  <hr><a href="project2.html"> Bank Account System </a>
+                  <hr><a href="project3.html"> Memory Game </a>
+                  <hr><a href="project4.html"> Password Generator </a>
                 </div>
               </div>
             </li>
@@ -41,13 +44,17 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main class="contact">
       <h1> Contact Me </h1>
-      <div class="text-options">
-
-      </div>
+      <!--Email Form from https://blog.hubspot.com/marketing/html-form-email-->
       <div class="text-to-send">
-          
+        <form action="mailto:ruestadam@hotmail.com" method="post" enctype="multipart/form-data" name="EmailForm">
+          <h4>Your Name: </h4>
+          <input type="text" size="25" name="ContactName"><br>
+          <h4> Your Message: </h4>
+          <textarea name="ContactComment" rows="20" cols="80"></textarea><br><br>
+          <input class="send_button" type="submit" value="Submit">
+        </form>
       </div>
     </main>
   </body>

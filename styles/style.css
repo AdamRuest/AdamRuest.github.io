@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap");
 
+/* colors */
 :root {
     --light-bg-color: #FFFEFA;
     --dark-bg-color: #09001D;
@@ -9,14 +10,16 @@
     --black-color: black;
     --grey-color: rgb(202, 202, 202);
 }
-/*
-* {
-    outline: 1px solid red;
-    outline-offset: -1px;
+
+/* font-sizes */
+:root {
+    --small-text: 12px;
+    --medium-text: 18px;
+    --large-text: 24px;
 }
-*/
+
 body {
-    padding-top: 5em;
+    padding-top: 4%;
     background-color: var(--light-bg-color);
     font-family: "Inconsolata", sans-serif;
 }
@@ -25,9 +28,7 @@ header {
     background-color: var(--dark-bg-color);
     color: var(--main-color);
     font-weight: bold;
-    padding-bottom: 1em;
-    border-color: var(--main-color);
-    border-bottom-width: 12px;
+    padding-bottom: 1%;
     position: fixed;
     top: 0;
     right: 0;
@@ -41,6 +42,10 @@ nav ul {
 .nav-left > ul > li {
     display: inline;
     float: left;
+}
+
+.nav-right {
+    margin-right: 1%;
 }
 
 .nav-right > ul > li > a > img {
@@ -57,8 +62,8 @@ nav ul {
     color: var(--dark-bg-color);
     font-family: inherit;
     font-weight: inherit;
-    font-size: 18px;
-    border: 0em;
+    font-size: var(--medium-text);
+    border: 0px;
     width: 7em;
     height: 2.8em;
 }
@@ -68,12 +73,9 @@ nav ul {
     color: var(--main-color);
     font-family: inherit;
     font-weight: inherit;
-    font-size: 18px;
+    font-size: var(--medium-text);
     border-style: solid;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
-    border-left-width: 1px;
-    border-right-width: 1px;
+    border-width: 0px 1px 0px 1px;
     border-color: var(--main-color);
     width: 7rem;
     height: 2.8em;
@@ -90,12 +92,9 @@ nav ul {
     padding: 16px;
     font-family: inherit;
     font-weight: inherit;
-    font-size: 18px;
+    font-size: var(--medium-text);
     border-style: solid;
-    border-right-width: 1px;
-    border-left-width: 1px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    border-width: 0px 1px 0px 1px;
     border-color: var(--main-color);
     min-width: 7em;
     height: 2.75em;
@@ -148,23 +147,20 @@ main {
     color: var(--text-color);
 }
 
-.hero {
-    position: fixed;
-}
-
 .hero > div {
     display: inline;
 }
 
 .hero .col-left {
     float: left;
+    width: 40%;
 }
 
 .hero .col-right {
     float: right;
     text-align: justify;
-    margin-top: 7em;
-    margin-left: 5em
+    margin-top: 5%;
+    width: 55%;
 }
 
 .hero .col-right h2 {
@@ -172,20 +168,21 @@ main {
 }
 
 .hero .col-right p {
-    width: 20em;
+    width: 50%;
     font-size: 24px;
 }
 
 .hero .col-left img {
-    width: 500px;
-    height: 500px;
-    margin-top: 10em;
-    margin-left: 20em;
+    width: 55%;
+    height: 55%;
+    margin-top: 20%;
+    margin-left: 40%;
+    border-radius: 8px;
 }
 
 .aboutme {
-    margin-left: 15em;
-    margin-right: 10em;
+    margin-left: 12.5%;
+    margin-right: 10%;
 }
 
 .aboutme hr {
@@ -193,23 +190,23 @@ main {
     color: var(--main-color);
     background-color: var(--main-color);
     height: 3px;
-    width: 103em;
+    width: 110%;
     border-radius: 3px;
     border: none;
-    margin-top: 4em;
-    margin-left: -8em;
+    margin-top: 5%;
+    margin-left: -8%;
 }
 
 .aboutme h1 {
-    margin-top: 1em;
-    margin-left: 1em;
+    margin-top: 6%;
+    margin-left: 6%;
     font-size: 82px;
 }
 
 .aboutme p {
-    font-size: 24px;
-    width: 55em;
-    margin-left: 1em;
+    font-size: var(--large-text);
+    width: 90%;
+    margin-left: 2%;
     text-align: justify;
     display: grid;
 }
@@ -220,21 +217,28 @@ main {
 
 .aboutme .col-left {
     float: left;
+    width: 30%;
 }
 
 .aboutme .col-left img {
-    width: 350px;
-    height: 350px;
-    margin-left: 5em;
+    width: 80%;
+    margin-left: 20%;
+    border-radius: 8px;
 }
 
 .aboutme .col-right {
     float: right;
+    width: 40%;
+    margin-right: 25%;
 }
 
 .aboutme .col-right p {
-    width: 30em;
-    margin-right: 10em;
+    width: 120%;
+}
+
+.aboutme .skill ul {
+    font-size: var(--large-text);
+    list-style-type: none;
 }
 
 .aboutme .pastExperiences div {
@@ -246,9 +250,10 @@ main {
 }
 
 .aboutme .pastExperiences .col-right img {
-    width: 450px;
-    height: 450px;
-    margin-right: 15em;
+    width: 80%;
+    margin-left: 25%;
+    border-radius: 10px;
+    box-shadow: 10px 7px var(--grey-color);
 }
 
 .aboutme .pastExperiences .col-left {
@@ -256,13 +261,13 @@ main {
 }
 
 .aboutme .pastExperiences .col-left p {
-    width: 25em;
+    width: 135%;
 }
 
 .aboutme .pastExperiences button {
-    width: 15em;
-    margin-left: 5em;
-    font-size: 24px;
+    width: 80%;
+    margin-left: 30%;
+    font-size: var(--large-text);
     font-weight: bold;
     color: var(--text-color);
     background-color: var(--main-color);
@@ -271,8 +276,8 @@ main {
     border-color: var(--main-color);
     border-radius: 8px;
     padding: 10px;
-    margin-top: 1em;
-    margin-bottom: 5em;
+    margin-top: 5%;
+    margin-bottom: 30%;
 }
 
 .aboutme .pastExperiences button:hover {
@@ -286,8 +291,8 @@ main {
 }
 
 .projects h1 {
-    margin-top: 2em;
-    margin-left: 4.5em;
+    margin-top: 8%;
+    margin-left: 15%;
     font-size: 56px;
 }
 
@@ -298,37 +303,37 @@ main {
 }
 
 .projects .col-left {
-    margin-top: 2em;
-    margin-left: 10em;
-    width: 20em;
-    font-size: 24px;
+    margin-top: 3%;
+    margin-left: 15%;
+    width: 28%;
+    font-size: var(--large-text);
     text-align: justify;
     float: left;
 }
 
 .projects h4 {
-    font-size: 24px;
+    font-size: var(--large-text);
     text-align: center;
 }
 
 .projects img {
-    width: 250px;
-    height: 250px;
+    width: 90%;
     display: block;
     margin: 0 auto;
+    border-radius: 5px;
 }
 
 .scroll-menu {
-    margin-right: 5em;
-    margin-left: 52.5em;
+    margin-right: 5%;
+    margin-left: 45%;
     margin-top: -3em;
     overflow-y: scroll;
     direction: rtl;
-    height: 40em;
-    width: 45em;
+    height: 69vh;
+    width: 40%;
     display: grid;
     grid-template-columns: auto auto;
-    grid-gap: 2em;
+    grid-gap: 5%;
 }
 
 .scroll-menu div {
@@ -350,13 +355,13 @@ body ::-webkit-scrollbar {
 }
 
 .project_page h1 {
-    margin-top: 2em;
-    margin-left: 5em;
+    margin-top: 7%;
+    margin-left: 15%;
     font-size: 56px;
 }
 
 .project_page p {
-    font-size: 20px;
+    font-size: var(--large-text);
 }
 
 .first-content div {
@@ -365,40 +370,42 @@ body ::-webkit-scrollbar {
 
 .first-content .col-left {
     float: left;
-    margin-left: 17.5em;
+    margin-left: 12.5%;
 }
 
 .first-content .col-left p {
-    width: 30em;
+    width: 60vh;
     text-align: justify;
 }
 
 .first-content .col-right {
     float: right;
-    margin-right: 35em;
+    margin-right: 30%;
 }
 
 .first-content .col-right img {
-    width: 400px;
-    height: 400px;
+    width: 45vh;
+    height: 45vh;
+    border-radius: 10px;
+    box-shadow: 10px 8px var(--grey-color);
 }
 
 .project_page hr {
-    margin-top: 30em;
+    margin-top: 25%;
     height: 3px;
     border-radius: 2px;
     border: none;
     background-color: var(--main-color);
-    margin-left: 10em;
-    width: 94em;
+    margin-left: 8%;
+    width: 82%;
 }
 
 .project_page .second-content p {
-    margin-left: 14em;
-    margin-top: 2em;
+    margin-left: 10%;
+    margin-top: 2%;
     text-align: justify;
-    width: 60em;
-    margin-bottom: 2em;
+    width: 75%;
+    margin-bottom: 3%;
 }
 
 project-nav {
@@ -406,16 +413,16 @@ project-nav {
 }
 
 project-nav .backward {
-    margin-left: 15em;
+    margin-left: 15%;
     float: left;
-    height: 3em;
-    width: 15em;
+    height: 5vh;
+    width: 15%;
     border-width: 2px;
     border-style: solid;
     border-color: var(--main-color);
     border-radius: 8px;
     background-color: var(--main-color);
-    font-size: 18px;
+    font-size: var(--medium-text);
     font-weight: bold;
 }
 
@@ -425,21 +432,45 @@ project-nav .backward:hover {
 }
 
 project-nav .github {
-    margin-right: 20em;
+    margin-right: 20%;
     float: right;
-    height: 3em;
-    width: 15em;
+    height: 5vh;
+    width: 15%;
     border-width: 2px;
     border-style: solid;
     border-color: var(--main-color);
     border-radius: 8px;
     background-color: var(--main-color);
-    font-size: 18px;
+    font-size: var(--medium-text);
     font-weight: bold;
-    margin-bottom: 3em;
+    margin-bottom: 5%;
 }
 
 project-nav .github:hover {
+    background-color: var(--white-color);
+    transition-duration: 0.4s;
+}
+
+.contact {
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    font-size: var(--large-text);
+}
+
+.send_button {
+    height: 5vh;
+    width: 25%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--main-color);
+    border-radius: 8px;
+    background-color: var(--main-color);
+    font-size: var(--medium-text);
+    font-weight: bold;
+}
+
+.send_button:hover {
     background-color: var(--white-color);
     transition-duration: 0.4s;
 }
